@@ -1,6 +1,6 @@
 
 // Write Javascript code!
-function decodeMorse(morseCode) {
+function decode(morseCode) {
   const MORSE_CODE = { 
    '-.-.--': '!',
   '.-..-.': '"',
@@ -70,5 +70,5 @@ function decodeMorse(morseCode) {
     ).join(' ');
 }
 
-var decoded = decodeMorse('-- .- -..-    -. --- .--');
-console.log(decoded);
+var decodeMorse = decode('-- .- -..-    -. --- .--');
+console.log(decodeMorse);
