@@ -60,9 +60,7 @@ function decode(morseCode) {
   };
 
   return morseCode
-    .split('   ')
-    .map(
-      a => a
+    .split('   ').map(a => a
         .split(' ')
         .map(
           b => MORSE_CODE[b]
