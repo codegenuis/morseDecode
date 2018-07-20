@@ -1,7 +1,4 @@
-
-// Write Javascript code!
-function decode(morseCode) {
-  const MORSE_CODE = { 
+const MORSE_CODE = { 
    '-.-.--': '!',
   '.-..-.': '"',
   '...-..-': '$',
@@ -58,14 +55,10 @@ function decode(morseCode) {
   '..--.-': '_',
   '...---...': 'SOS',
   };
+  
+function decode(morseCode) {
 
-  return morseCode
-    .split('   ').map(a => a
-        .split(' ')
-        .map(
-          b => MORSE_CODE[b]
-        ).join('')
-    ).join(' ');
+  return morseCode.split('   ').map(a => a.split(' ').map(b => MORSE_CODE[b]).join('')).join(' ');
 }
 
 var decodeMorse = decode('-- .- -..-    -. --- .--');
